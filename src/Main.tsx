@@ -1,10 +1,10 @@
 import React from 'react'
-import { Home } from './Home.tsx'
+import { Home } from './pages/Home.tsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Jobdetail } from './Jobdetail.tsx';
-import Login from './Login.tsx';
-import Test from './test.tsx';
-import Register from './Register.tsx';
+import { Jobdetail } from './pages/Jobdetail.tsx';
+import Login from './pages/Login.tsx';
+import Test from './pages/test.tsx';
+import Register from './pages/Register.tsx';
 
 import { useCookies } from 'react-cookie';
 

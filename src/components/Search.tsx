@@ -3,7 +3,7 @@ import React from 'react'
 import { useState,useEffect,useRef  } from 'react';
 
 import { useNavigate } from "react-router-dom";
-import { ResponseJobType, useGetJobsQuery } from './redux/services/apiJobs';
+import { ResponseJobType, useGetJobsQuery } from '../redux/services/apiJobs';
 
 
 export const Search = () => {

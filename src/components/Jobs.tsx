@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 // import axios from 'axios';
 // import { useEffect } from 'react';
 // import { useState} from 'react';
-import { ResponseJobType, useGetJobsQuery } from './redux/services/apiJobs.tsx';
+import { ResponseJobType, useGetJobsQuery } from '../redux/services/apiJobs.tsx';
 // import {useMemo } from 'react';
 
 

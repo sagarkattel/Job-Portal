@@ -1,13 +1,13 @@
 
 import {  createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-export type Register={
+export type RegisterT={
     name:string;
     email:string;
     password:string;
 }
 
-export type Login={
+export type LoginT={
     email:string;
     password:string;
 }
@@ -45,7 +45,7 @@ export const apiUser=createApi({
             query:()=>'users',
             providesTags:['Users']
         }),
-        registerUser: builder.mutation<ResponseUserType,Register>({
+        registerUser: builder.mutation<ResponseUserType,RegisterT>({
             query: (details) => ({
               url: '/register',
               method: 'POST',
@@ -53,7 +53,7 @@ export const apiUser=createApi({
             }),
             invalidatesTags: ['Users'],
         }),
-        loginUser:builder.mutation<ResponseUserType,Login>({
+        loginUser:builder.mutation<ResponseUserType,LoginT>({
             query:(details)=>({
                 url:"/login",
                 method:'POST',

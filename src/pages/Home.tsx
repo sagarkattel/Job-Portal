@@ -1,7 +1,7 @@
 import React from 'react'
-import { Head } from './Head'
-import { Search } from './Search'
-import { Jobs } from './Jobs'
+import { Head } from '../components/Head'
+import { Search } from '../components/Search'
+import { Jobs } from '../components/Jobs'
 
 
 export const Home = () => {
